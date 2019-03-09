@@ -26,7 +26,7 @@ public class SipData {
         status = s;
     }
 
-    public void setPeer() {
+    public void setSipProfile() {
         try {
             SipProfile.Builder builder = new SipProfile.Builder("bbb","10.1.1.6");
             builder.setPassword("87654321");
@@ -35,7 +35,7 @@ public class SipData {
             Log.d("SIP",e.getMessage());
         }
     }
-    public void setSipProfile(){
+    public void setPeer(){
         try {
             SipProfile.Builder builder = new SipProfile.Builder("200", "10.1.1.6");
             peer = builder.build();
