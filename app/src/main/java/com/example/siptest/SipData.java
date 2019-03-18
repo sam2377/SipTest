@@ -28,8 +28,8 @@ public class SipData {
 
     public void setSipProfile() {
         try {
-            SipProfile.Builder builder = new SipProfile.Builder("bbb","10.1.1.6");
-            builder.setPassword("87654321");
+            SipProfile.Builder builder = new SipProfile.Builder("4041","140.116.82.40");
+            builder.setPassword("5678@ncku");
             sipProfile = builder.build();
         }catch (Exception e) {
             Log.d("SIP",e.getMessage());
@@ -37,7 +37,7 @@ public class SipData {
     }
     public void setPeer(){
         try {
-            SipProfile.Builder builder = new SipProfile.Builder("200", "10.1.1.6");
+            SipProfile.Builder builder = new SipProfile.Builder("4040", "140.116.82.40");
             peer = builder.build();
         }catch (Exception e){
             Log.d("SIP",e.getMessage());

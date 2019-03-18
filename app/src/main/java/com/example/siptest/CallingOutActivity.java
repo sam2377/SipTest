@@ -67,11 +67,11 @@ public class CallingOutActivity extends AppCompatActivity implements View.OnClic
                 status = "onRinging";
                 handler.post(runnable);
             }
-
-            //            @Override
+//
+//            @Override
 //            public void onError(SipAudioCall call, int errorCode, String errorMessage) {
 //                super.onError(call, errorCode, errorMessage);
-//                Log.d("SIP",errorMessage);
+//                Log.d("SIP",errorMessage + " qweqwe");
 //                try {
 //                    call.endCall();
 //                }catch (Exception e){

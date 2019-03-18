@@ -32,7 +32,13 @@ public class CallingInActivity extends AppCompatActivity implements View.OnClick
             @Override
             public void onCallEnded(SipAudioCall call) {
                 super.onCallEnded(call);
-                finish();
+//                call.close();
+                try {
+                    call.endCall();
+                    finish();
+                }catch (Exception e){
+                    Log.d("SIP", e.getMessage());
+                }
             }
         };
         MainActivity.sipData.sipAudioCall.setListener(listener);
